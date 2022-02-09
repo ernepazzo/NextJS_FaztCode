@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Navigation from "./navigation";
+import { Spinner } from "./Spinner";
 
 const Container = (props) => {
   return (
     <div>
+      {/* <Spinner /> */}
       <Head>
         <title>NextJS Proyect</title>
         <link
@@ -12,9 +14,7 @@ const Container = (props) => {
         />
       </Head>
       <Navigation />
-      <div className="container p-4">
-        {props.children}
-      </div>
+      <div className="container p-4">{props.children}</div>
     </div>
   );
 };
